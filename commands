@@ -1,0 +1,15 @@
+
+w = warning('query', 'last')
+id = w.identifier
+warning('off', id)
+
+
+
+
+TEST PROB
+load('e_training.mat')
+perplexity(LM, '/u/cs401/A2_SMT/data/Hansard/Testing/', 'e','',0)
+load('f_training.mat')
+perplexity(LM, '/u/cs401/A2_SMT/data/Hansard/Testing/', 'f','',0)
+
+align_ibm1('/u/cs401/A2_SMT/data/Hansard/Training/',3,0,0)

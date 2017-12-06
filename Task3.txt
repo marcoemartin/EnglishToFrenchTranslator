@@ -1,0 +1,17 @@
+Perplexiy Values
+
+Delta    Enlgish    French	
+0	 13.3022    13.2618
+0.005    39.2640    37.4203	
+0.05     50.7752    51.5323
+0.1      59.1634    61.2301
+0.2      71.7519    75.7556
+0.5      98.7132    107.2891
+
+MLE (delta =0) was the one that took the longest. As the Delta was increased
+the preplexity increases logarithmically. This is due to the fact that add-one smoothing is 
+allocating probability for some seen vs unseen events. Therefore, as delta increases the more
+probabiltiy mass of unseen events is collected, which cuases more bias and more preplexity.
+Addtionally, the French value is slightly higher for most of the deltas. This may be due 
+to the less strict way we parse french and to the the fact that French has more complex 
+conjugations than Enlish making it more complex to parse.
